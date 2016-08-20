@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container(ng-controller="comparatorCtrl")
+    h1= title
+    p Welcome to #{title}
+    section
+      label(for='n1') N1:
+      input(ng-model='n1', name='n1')
+      br
+      label(for='n2') N2:
+      input(ng-model='n2', name='n2')
+      br
+      button(ng-click='max()') Max
+      button(ng-click='min()') Min
+      hr
+      h3 {{result}}  
+    
