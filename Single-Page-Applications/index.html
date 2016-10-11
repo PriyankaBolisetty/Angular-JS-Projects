@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app='newModule'>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script src='newModule.js'></script>
+        <script>
+            function MyController($scope){
+                $scope.name = "Priyanka";
+            }
+        </script>
+    </head>
+    <body>
+        <header ng-controller="newController">
+            <h1>hello Angular {{name}}</h1>
+            <input type="text" ng-model="name" />
+            
+            <br>
+            <h3>Current Time is {{time}}</h3>
+            <a href="#" ng-click="updateTime()">Update time</a> 
+        </header>
+    </body>
+</html>
